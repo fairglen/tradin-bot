@@ -34,10 +34,6 @@ func TestNewRouter(t *testing.T) {
 			name:  "has buy route",
 			route: route{path: "/coinbase/buy", methods: []string{http.MethodPost}},
 		},
-		{
-			name:  "has sell route",
-			route: route{path: "/coinbase/sell", methods: []string{http.MethodPost}},
-		},
 	}
 	for _, scenario := range scenarios {
 		t.Run(scenario.name, func(t *testing.T) {
