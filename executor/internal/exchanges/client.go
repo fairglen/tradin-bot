@@ -11,7 +11,3 @@ type Order struct {
 type Client interface {
 	CreateOrder(order Order) error
 }
-
-func NewCoinbaseClient() (client Client, err error) {
-	return nil, nil
-}
